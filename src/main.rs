@@ -54,11 +54,10 @@ fn main() {
 
         if dividend > 0 && divisor > 0 {
             restoring_div(dividend, divisor, n_bits);
+            non_restoring_div(dividend, divisor, n_bits);
         } else {
-            println!("Division contains negative, cannot use restoring division.");
+            println!("Division contains negative, cannot divide.");
         }
-
-        non_restoring_div(dividend, divisor, n_bits);
 
         println!("\nPress Enter to continue...");
         input.clear();
